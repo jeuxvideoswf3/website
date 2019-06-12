@@ -8,8 +8,8 @@
 
         $categorieManager = new CategorieManager($bdd);
         if ($categorieManager->delete($categorie)) {
-            echo "La catégorie a été supprimée avec succès";
+            echo "La catégorie a été supprimée avec succès <meta http-equiv=\"refresh\" content=\"3;URL=index.php?p=categorie.accueil\">";
         } else {
-            echo "Une erreur est survenue lors de la suppression";
+            echo "Une erreur est survenue lors de la suppression <meta http-equiv=\"refresh\" content=\"3;URL=index.php?p=categorie.accueil\">";
         }
     }
