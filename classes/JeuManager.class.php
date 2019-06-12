@@ -35,7 +35,7 @@
                 $data = $request->fetchAll(PDO::FETCH_ASSOC);
                 $request->closeCursor();
             } else {
-                $request = $this->db->prepare('SELECT * FROM version WHERE id = :id');
+                $request = $this->db->prepare('SELECT * FROM jeu WHERE id = :id');
                 $request->bindValue(':id', $id);
                 $request->execute();
                 $data = $request->fetch();
@@ -44,11 +44,14 @@
             return $data;
         }
 
-        public function update(Version $version) {
-            $request = $this->db->prepare('UPDATE version SET jeu_id = :jeu_id, support_id = :support_id, releasedate = :releasedate WHERE id = ' . $version->getId());
-            $request->bindValue(':jeu_id', $version->getJeuId());
-            $request->bindValue(':support_id', $version->getSupportId());
-            $request->bindValue(':releasedate', $version->getReleaseDate());
+        public function update(Jeu $jeu) {
+            $request = $this->db->prepare('UPDATE jeu SET titre = :titre, description = :description, pegi = :pegi, lien = :lien, categorie_id = :categorie_id, editeur_id = :editeur_id WHERE id = ' . $jeu->getId());
+            $request->bindValue(':titre', $jeu->getTitre());
+            $request->bindValue(':description', $jeu->getDescription());
+            $request->bindValue(':pegi', $jeu->getPegi());
+            $request->bindValue(':lien', $jeu->getLien());
+            $request->bindValue(':categorie_id', $jeu->getCategorieId());
+            $request->bindValue(':editeur_id', $jeu->getEditeurId());
             $request->execute();
             $request->closeCursor();
             if ($request->rowCount()) {
@@ -58,9 +61,9 @@
             }
         }
 
-        public function delete(Version $version) {
-            $request = $this->db->prepare('DELETE FROM version WHERE id = :id');
-            $request->bindValue(':id', $version->getId());
+        public function delete(Jeu $jeu) {
+            $request = $this->db->prepare('DELETE FROM jeu WHERE id = :id');
+            $request->bindValue(':id', $jeu->getId());
             $request->execute();
             $request->closeCursor();
             if ($request->rowCount()) {

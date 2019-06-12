@@ -24,20 +24,40 @@
                     </button>
                     <div class="collapse navbar-collapse" id="basicExampleNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=categorie.accueil">Catégorie</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégorie</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.php?p=categorie.accueil">Lister les catégories</a>
+                                    <a class="dropdown-item" href="index.php?p=categorie.ajouter">Ajouter une catégorie</a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=editeur.accueil">Éditeur</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Éditeur</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.php?p=editeur.accueil">Lister les éditeurs</a>
+                                    <a class="dropdown-item" href="index.php?p=editeur.ajouter">Ajouter un éditeur</a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=jeu.accueil">Jeu</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jeu</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.php?p=jeu.accueil">Lister les jeux</a>
+                                    <a class="dropdown-item" href="index.php?p=jeu.ajouter">Ajouter un jeu</a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=support.accueil">Support</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Support</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.php?p=support.accueil">Lister les supports</a>
+                                    <a class="dropdown-item" href="index.php?p=support.ajouter">Ajouter un support</a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.php?p=version.accueil">Version</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Version</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="index.php?p=version.accueil">Lister les versions</a>
+                                    <a class="dropdown-item" href="index.php?p=version.ajouter">Ajouter un version</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
