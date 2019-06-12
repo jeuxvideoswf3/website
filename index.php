@@ -5,7 +5,7 @@
     spl_autoload_register(function ($classe) {
         require_once 'classes/' . $classe . '.class.php';
     });
-
+file:///C:/Users/Etudiant/Downloads/jeuxvideos.sql
     if (isset($_GET['p'])) {
         $page = $_GET['p'];
     } else {
