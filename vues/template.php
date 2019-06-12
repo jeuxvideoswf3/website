@@ -16,7 +16,7 @@
 
         <header>
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top scrolling-navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark mdb-color darken-2 fixed-top scrolling-navbar">
                 <div class="container">
                     <a class="navbar-brand" href="index.php">Jeux-Vidéos.com</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,17 +24,20 @@
                     </button>
                     <div class="collapse navbar-collapse" id="basicExampleNav">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">Jeux</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?p=categorie.accueil">Catégorie</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Editeur</a>
+                                <a class="nav-link" href="index.php?p=editeur.accueil">Éditeur</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Support</a>
+                                <a class="nav-link" href="index.php?p=jeu.accueil">Jeu</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="#">Accueil</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?p=support.accueil">Support</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.php?p=version.accueil">Version</a>
                             </li>
                         </ul>
                     </div>
